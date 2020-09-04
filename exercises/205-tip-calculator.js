@@ -21,7 +21,16 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
-
+function tipAmount (amount, service) {
+    if (service == 'good') {
+        return amount * .20
+    } else if (service == 'fair') {
+        return amount * .15
+    } else if (service == 'bad') {
+        return amount * .10
+    }
+} console.log(tipAmount( 100, 'good'));
+console.log(tipAmount(40, 'fair'));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
